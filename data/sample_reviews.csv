@@ -1,0 +1,101 @@
+review_id,app_name,translated_review,sentiment,sentiment_polarity,sentiment_subjectivity,review_date
+1,Instagram,Love this app so much! Best social media platform ever.,Positive,0.72,0.85,2017-08-15
+2,Instagram,Does the job but could be better with more features.,Neutral,0.08,0.40,2017-09-03
+3,Instagram,Crashes constantly after the latest update. Terrible.,Negative,-0.65,0.78,2017-10-22
+4,Instagram,Amazing update! Stories feature is incredible.,Positive,0.88,0.92,2017-11-05
+5,Instagram,Annoying ads ruining the experience.,Negative,-0.42,0.55,2018-01-14
+6,WhatsApp,Works great for staying in touch with family abroad.,Positive,0.60,0.70,2017-06-20
+7,WhatsApp,Good app but backup feature is unreliable.,Neutral,0.05,0.50,2017-07-11
+8,WhatsApp,Cannot send large videos. Very frustrating.,Negative,-0.55,0.65,2017-08-30
+9,WhatsApp,Love the end-to-end encryption for privacy.,Positive,0.75,0.80,2017-09-18
+10,WhatsApp,Simple and effective. Highly recommended.,Positive,0.82,0.88,2017-10-02
+11,Clash of Clans,Addictive game! Been playing for 3 years.,Positive,0.65,0.75,2016-05-10
+12,Clash of Clans,Pay to win model is extremely disappointing.,Negative,-0.70,0.82,2016-06-25
+13,Clash of Clans,Latest update broke many features. Very upset.,Negative,-0.60,0.72,2016-08-14
+14,Clash of Clans,Great strategy game with wonderful community.,Positive,0.78,0.85,2016-09-01
+15,Clash of Clans,Server downtime is too frequent and annoying.,Negative,-0.45,0.60,2016-10-17
+16,Spotify,Best music streaming service without doubt.,Positive,0.90,0.92,2017-03-08
+17,Spotify,Shuffle on free tier is truly random and good.,Neutral,0.12,0.45,2017-04-22
+18,Spotify,Premium price is too high for the value offered.,Negative,-0.35,0.58,2017-05-30
+19,Spotify,Offline mode works perfectly for my commute.,Positive,0.68,0.75,2017-07-19
+20,Spotify,New UI update is confusing and hard to navigate.,Negative,-0.50,0.65,2017-08-07
+21,YouTube,Endless content available for free. Love it!,Positive,0.85,0.88,2017-01-14
+22,YouTube,Ad frequency has increased way too much lately.,Negative,-0.55,0.70,2017-02-28
+23,YouTube,Background play should be free not premium only.,Negative,-0.40,0.62,2017-04-10
+24,YouTube,Great quality videos and easy to find content.,Positive,0.70,0.78,2017-05-25
+25,YouTube,Recommendations algorithm is scarily accurate.,Neutral,0.15,0.50,2017-06-30
+26,Gmail,Clean interface and powerful spam filtering.,Positive,0.72,0.80,2017-02-05
+27,Gmail,Attachment limits are frustratingly low.,Negative,-0.48,0.65,2017-03-20
+28,Gmail,Syncs perfectly across all my devices.,Positive,0.80,0.85,2017-04-15
+29,Gmail,Undo send feature saved me many times!,Positive,0.75,0.82,2017-05-08
+30,Gmail,Search could be smarter and more intuitive.,Neutral,0.05,0.45,2017-06-22
+31,Duolingo,Makes language learning fun and accessible!,Positive,0.88,0.90,2017-07-01
+32,Duolingo,Notifications are too pushy and excessive.,Negative,-0.42,0.68,2017-08-15
+33,Duolingo,Gamification keeps me motivated every day.,Positive,0.78,0.85,2017-09-20
+34,Duolingo,Some lessons feel too repetitive and boring.,Negative,-0.30,0.55,2017-10-05
+35,Duolingo,Perfect for short daily practice sessions.,Positive,0.82,0.88,2017-11-18
+36,Snapchat,Fun filters are creative and entertaining.,Positive,0.70,0.80,2017-05-12
+37,Snapchat,New update completely ruined the user experience.,Negative,-0.78,0.88,2018-02-28
+38,Snapchat,Stories concept was revolutionary and original.,Positive,0.65,0.75,2017-06-30
+39,Snapchat,Battery drain is absolutely terrible now.,Negative,-0.65,0.78,2017-08-22
+40,Snapchat,Discover section is interesting for news updates.,Neutral,0.18,0.52,2017-09-10
+41,Uber,Super convenient and usually very reliable.,Positive,0.72,0.80,2017-04-05
+42,Uber,Surge pricing during rush hour is excessive.,Negative,-0.60,0.72,2017-05-18
+43,Uber,Driver was professional and car was clean.,Positive,0.80,0.85,2017-06-25
+44,Uber,App GPS tracking is unreliable in my area.,Negative,-0.45,0.62,2017-07-30
+45,Uber,Pool option saves a lot of money on commutes.,Positive,0.68,0.75,2017-09-12
+46,TikTok,Incredibly addictive short video content.,Positive,0.75,0.85,2018-03-10
+47,TikTok,Privacy concerns make me uncomfortable using it.,Negative,-0.50,0.70,2018-04-25
+48,TikTok,Algorithm for you page is impressive and clever.,Positive,0.82,0.88,2018-05-30
+49,TikTok,Too many ads interrupting the video feed.,Negative,-0.40,0.60,2018-06-15
+50,TikTok,Creative community makes excellent unique content.,Positive,0.78,0.85,2018-07-20
+51,Netflix,Massive content library with great originals.,Positive,0.85,0.90,2017-08-05
+52,Netflix,Price increase was disappointing for subscribers.,Negative,-0.45,0.65,2017-09-18
+53,Netflix,Offline downloads are a fantastic travel feature.,Positive,0.80,0.88,2017-10-30
+54,Netflix,Too many subpar originals dilute the catalogue.,Negative,-0.35,0.58,2017-11-22
+55,Netflix,UI makes it easy to discover great new shows.,Positive,0.70,0.78,2018-01-08
+56,Amazon Shopping,Fast delivery with Prime is absolutely excellent.,Positive,0.88,0.90,2017-03-14
+57,Amazon Shopping,Return process can be confusing and time-consuming.,Negative,-0.40,0.62,2017-04-28
+58,Amazon Shopping,Great deals on products with price comparison.,Positive,0.75,0.82,2017-06-10
+59,Amazon Shopping,Fake reviews make it hard to trust products.,Negative,-0.62,0.75,2017-07-25
+60,Amazon Shopping,Subscribe and Save feature saves a lot of money.,Positive,0.72,0.80,2017-09-05
+61,Candy Crush,Fun casual game for quick entertainment breaks.,Positive,0.65,0.75,2016-11-10
+62,Candy Crush,Pay to progress mechanics are very annoying.,Negative,-0.68,0.80,2016-12-25
+63,Candy Crush,Lives system makes me wait too long between plays.,Negative,-0.55,0.70,2017-01-18
+64,Candy Crush,Level design is creative and visually appealing.,Positive,0.72,0.82,2017-02-28
+65,Candy Crush,Good time killer on public transport commutes.,Positive,0.60,0.72,2017-04-15
+66,Google Maps,Most accurate navigation app available today.,Positive,0.88,0.90,2017-05-20
+67,Google Maps,Offline maps save data usage significantly.,Positive,0.78,0.85,2017-06-30
+68,Google Maps,Sometimes routes are longer than necessary though.,Neutral,0.08,0.45,2017-08-12
+69,Google Maps,Street view is incredibly detailed and useful.,Positive,0.80,0.88,2017-09-25
+70,Google Maps,Frequent update requests are slightly annoying.,Neutral,0.05,0.42,2017-10-30
+71,Headspace,Transformed my morning meditation routine completely.,Positive,0.90,0.92,2017-06-08
+72,Headspace,Subscription price is a bit high but worth it.,Neutral,0.20,0.55,2017-07-22
+73,Headspace,Content variety could be expanded more.,Neutral,0.10,0.48,2017-08-30
+74,Headspace,Andy's voice is calming and very soothing.,Positive,0.82,0.88,2017-10-10
+75,Headspace,Sleeping sounds section is absolutely excellent.,Positive,0.85,0.90,2017-11-20
+76,Twitter,Great for real-time news and trending updates.,Positive,0.68,0.78,2017-04-18
+77,Twitter,Harassment and toxicity problems need addressing.,Negative,-0.65,0.80,2017-05-30
+78,Twitter,Character limit feels restrictive for nuanced views.,Negative,-0.32,0.58,2017-07-14
+79,Twitter,Breaking news arrives fastest here consistently.,Positive,0.75,0.82,2017-08-25
+80,Twitter,Verification system feels unfair and inconsistent.,Negative,-0.45,0.65,2017-10-05
+81,LinkedIn,Excellent for professional networking connections.,Positive,0.72,0.80,2017-03-12
+82,LinkedIn,Too many irrelevant job notifications daily.,Negative,-0.40,0.62,2017-04-25
+83,LinkedIn,Helped me get multiple job interviews quickly.,Positive,0.85,0.90,2017-06-08
+84,LinkedIn,Feed feels like Facebook wannabe recently.,Negative,-0.50,0.68,2017-07-20
+85,LinkedIn,Premium features justify the monthly cost for me.,Neutral,0.22,0.52,2017-09-02
+86,Zoom,Reliable video calls with good audio quality.,Positive,0.78,0.85,2020-04-10
+87,Zoom,Zoom fatigue is a real phenomenon from overuse.,Negative,-0.35,0.60,2020-05-25
+88,Zoom,Background blur feature is very professional looking.,Positive,0.72,0.80,2020-06-30
+89,Zoom,Security concerns need to be addressed more urgently.,Negative,-0.58,0.72,2020-08-15
+90,Zoom,Breakout rooms work perfectly for team sessions.,Positive,0.80,0.88,2020-09-28
+91,Robinhood,Made investing accessible for everyday people.,Positive,0.75,0.82,2018-05-15
+92,Robinhood,Gamification of investing feels irresponsible.,Negative,-0.62,0.75,2018-06-28
+93,Robinhood,Simple clean interface for beginner investors.,Positive,0.68,0.78,2018-08-10
+94,Robinhood,Outage during market crash caused real financial loss.,Negative,-0.82,0.90,2018-09-25
+95,Robinhood,No commission trading saves significant money.,Positive,0.80,0.85,2018-11-05
+96,Calm,Helps me fall asleep faster every single night.,Positive,0.88,0.90,2017-08-20
+97,Calm,Sleep stories narrated by celebrities are delightful.,Positive,0.82,0.88,2017-09-30
+98,Calm,Free content is too limited compared to competitors.,Negative,-0.45,0.65,2017-11-12
+99,Calm,Daily meditation reminders keep me accountable.,Positive,0.75,0.82,2018-01-25
+100,Calm,Annual subscription provides excellent value overall.,Positive,0.70,0.78,2018-03-08
