@@ -1,0 +1,207 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); }
+.wrap { padding: 1.5rem 0; }
+.section-label { font-size: 11px; font-weight: 500; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px; }
+.metrics { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; margin-bottom: 1.5rem; }
+.metric { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 14px 16px; }
+.metric-label { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 4px; }
+.metric-value { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
+.metric-sub { font-size: 11px; color: var(--color-text-tertiary); margin-top: 2px; }
+.charts { display: grid; grid-template-columns: minmax(0,1.6fr) minmax(0,1fr); gap: 16px; margin-bottom: 1.5rem; }
+.card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; }
+.card-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 14px; }
+.legend { display: flex; gap: 14px; margin-bottom: 10px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--color-text-secondary); }
+.legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+.bottom-row { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 16px; }
+.rank-list { list-style: none; }
+.rank-item { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px; }
+.rank-item:last-child { border-bottom: none; }
+.rank-name { color: var(--color-text-primary); font-weight: 500; }
+.rank-cat { font-size: 11px; color: var(--color-text-secondary); margin-top: 1px; }
+.badge { font-size: 11px; padding: 2px 8px; border-radius: 99px; font-weight: 500; }
+.badge-good { background: #EAF3DE; color: #3B6D11; }
+.badge-warn { background: #FAEEDA; color: #854F0B; }
+.badge-bad  { background: #FCEBEB; color: #A32D2D; }
+</style>
+<h2 class="sr-only">App store review NPS sentiment dashboard showing overall scores, monthly trends, and category rankings</h2>
+<div class="wrap">
+  <p class="section-label">Overall snapshot</p>
+  <div class="metrics">
+    <div class="metric">
+      <div class="metric-label">Overall NPS</div>
+      <div class="metric-value" style="color:#1D9E75">+23</div>
+      <div class="metric-sub">Good tier (0–30)</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Promoters</div>
+      <div class="metric-value">61%</div>
+      <div class="metric-sub">5-star reviews</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Passives</div>
+      <div class="metric-value">22%</div>
+      <div class="metric-sub">3–4 star reviews</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Detractors</div>
+      <div class="metric-value" style="color:#A32D2D">17%</div>
+      <div class="metric-sub">1–2 star reviews</div>
+    </div>
+  </div>
+
+  <div class="charts">
+    <div class="card">
+      <div class="card-title">Monthly NPS trend — 2016 to 2018</div>
+      <div class="legend">
+        <span class="legend-item"><span class="legend-dot" style="background:#1D9E75"></span>NPS score</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#B5D4F4;border:1px solid #378ADD"></span>Review volume</span>
+      </div>
+      <div style="position:relative;height:200px"><canvas id="trendChart" role="img" aria-label="Line chart showing NPS score monthly from 2016 to 2018, ranging from 15 to 31">NPS ranged from 15 to 31 over 2016–2018.</canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Sentiment distribution</div>
+      <div style="position:relative;height:200px;display:flex;align-items:center;justify-content:center">
+        <canvas id="donutChart" role="img" aria-label="Donut chart: 61% Promoters, 22% Passives, 17% Detractors">61% Promoters, 22% Passives, 17% Detractors.</canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-row">
+    <div class="card">
+      <div class="card-title">NPS by category</div>
+      <div style="position:relative;height:220px"><canvas id="catChart" role="img" aria-label="Horizontal bar chart of NPS by app category. Education leads at +41, Dating lags at -12.">Education +41, Health +38, Productivity +32, Books +29, Navigation +27, Social -4, Dating -12.</canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Top apps by NPS</div>
+      <ul class="rank-list">
+        <li class="rank-item">
+          <div><div class="rank-name">Headspace</div><div class="rank-cat">Health & Fitness</div></div>
+          <span class="badge badge-good">+61</span>
+        </li>
+        <li class="rank-item">
+          <div><div class="rank-name">Duolingo</div><div class="rank-cat">Education</div></div>
+          <span class="badge badge-good">+54</span>
+        </li>
+        <li class="rank-item">
+          <div><div class="rank-name">Google Maps</div><div class="rank-cat">Navigation</div></div>
+          <span class="badge badge-good">+48</span>
+        </li>
+        <li class="rank-item">
+          <div><div class="rank-name">Spotify</div><div class="rank-cat">Music & Audio</div></div>
+          <span class="badge badge-good">+39</span>
+        </li>
+        <li class="rank-item">
+          <div><div class="rank-name">Snapchat</div><div class="rank-cat">Social</div></div>
+          <span class="badge badge-warn">+8</span>
+        </li>
+        <li class="rank-item">
+          <div><div class="rank-name">Dating app avg</div><div class="rank-cat">Dating</div></div>
+          <span class="badge badge-bad">-12</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const months = ['Jan 16','Mar 16','May 16','Jul 16','Sep 16','Nov 16','Jan 17','Mar 17','May 17','Jul 17','Sep 17','Nov 17','Jan 18','Mar 18','May 18'];
+const npsScores = [16,18,15,20,22,19,23,26,25,28,31,29,27,24,21];
+const volumes = [1800,2100,1950,2300,2600,2200,2800,3100,2900,3400,3600,3200,3000,2700,2400];
+
+new Chart(document.getElementById('trendChart'), {
+  type: 'line',
+  data: {
+    labels: months,
+    datasets: [
+      {
+        label: 'NPS score',
+        data: npsScores,
+        borderColor: '#1D9E75',
+        backgroundColor: 'rgba(29,158,117,0.08)',
+        borderWidth: 2,
+        pointRadius: 3,
+        pointBackgroundColor: '#1D9E75',
+        tension: 0.35,
+        yAxisID: 'y',
+        fill: true,
+        borderDash: []
+      },
+      {
+        label: 'Review volume',
+        data: volumes,
+        borderColor: '#378ADD',
+        backgroundColor: 'rgba(55,138,221,0.0)',
+        borderWidth: 1.5,
+        pointRadius: 0,
+        tension: 0.35,
+        yAxisID: 'y2',
+        borderDash: [4,3]
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { ticks: { font: { size: 10 }, color: '#888780', maxRotation: 45, autoSkip: true, maxTicksLimit: 8 }, grid: { display: false } },
+      y: { ticks: { font: { size: 10 }, color: '#888780', callback: v => '+' + v }, grid: { color: 'rgba(136,135,128,0.12)' }, min: 0, max: 40 },
+      y2: { display: false, min: 0, max: 5000 }
+    }
+  }
+});
+
+new Chart(document.getElementById('donutChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Promoters 61%','Passives 22%','Detractors 17%'],
+    datasets: [{
+      data: [61, 22, 17],
+      backgroundColor: ['#1D9E75','#FAC775','#E24B4A'],
+      borderWidth: 2,
+      borderColor: 'transparent'
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: '68%',
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ' ' + ctx.label } }
+    }
+  }
+});
+
+new Chart(document.getElementById('catChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Dating','Social','Shopping','Entertainment','Navigation','Books','Productivity','Health','Education'],
+    datasets: [{
+      label: 'NPS',
+      data: [-12,-4,10,5,27,29,32,38,41],
+      backgroundColor: ctx => ctx.raw < 0 ? '#F09595' : ctx.raw >= 30 ? '#5DCAA5' : '#FAC775',
+      borderWidth: 0,
+      borderRadius: 3
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: {
+        ticks: { font: { size: 10 }, color: '#888780', callback: v => v < 0 ? v : '+' + v },
+        grid: { color: 'rgba(136,135,128,0.12)' },
+        min: -20, max: 50
+      },
+      y: { ticks: { font: { size: 11 }, color: '#888780' }, grid: { display: false } }
+    }
+  }
+});
+</script>
